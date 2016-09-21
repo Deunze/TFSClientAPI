@@ -94,7 +94,6 @@ class TFSClientAPI(object):
     
     def _compose_resource_path(self):
         full_resource_url = self.resource
-        #print(self.resource)
         get_args = '&'.join([
             '%s=%s' % (k, v)
             for k, v in self.PARAMETERS.iteritems()
